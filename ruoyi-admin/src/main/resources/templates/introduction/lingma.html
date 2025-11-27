@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="zh" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--360浏览器优先以webkit内核解析-->
+    <title>灵码介绍</title>
+    <link rel="shortcut icon" href="favicon.ico">
+    <link href="../static/css/bootstrap.min.css" th:href="@{/css/bootstrap.min.css}" rel="stylesheet"/>
+    <link href="../static/css/font-awesome.min.css" th:href="@{/css/font-awesome.min.css}" rel="stylesheet"/>
+    <link href="../static/css/style.min.css" th:href="@{/css/style.min.css}" rel="stylesheet"/>
+</head>
+
+<body class="gray-bg">
+    <div class="row border-bottom white-bg dashboard-header">
+        <div class="col-sm-3">
+            <h2>Hello, Developer</h2>
+            <small>扫描二维码了解更多灵码信息：</small>
+            <br>
+            <br>
+            <img th:src="@{/img/qr_code.png}" width="100%" style="max-width:264px;" alt="灵码二维码">
+            <br>
+        </div>
+        <div class="col-sm-5">
+            <h2>阿里云通义灵码</h2>
+            <p>通义灵码是阿里云出品的一款基于通义大模型的智能编码助手，提供代码智能生成、研发智能问答能力，帮助开发者高效、流畅的编码。通义灵码深度融合了<b>代码智能补全</b>、<b>代码生成</b>、<b>代码注释生成</b>、<b>单元测试生成</b>、<b>研发智能问答</b>等能力，适配<b>Visual Studio Code</b>、<b>JetBrains IDEs</b>等主流IDE，助力开发者提升研发效率，释放研发生产力。</p>
+            <p>
+                <b>当前版本：</b><span>v[[${version}]]</span>
+            </p>
+            <p>
+                <span class="label label-primary">AI驱动</span>
+                <span class="label label-success">&yen;免费使用</span>
+            </p>
+            <br>
+            <p>
+                <a class="btn btn-success btn-outline" href="https://tongyi.aliyun.com/lingma" target="_blank">
+                    <i class="fa fa-cloud"></i> 访问官网
+                </a>
+                <a class="btn btn-primary btn-outline" href="https://help.aliyun.com/zh/lingma" target="_blank">
+                    <i class="fa fa-book"></i> 帮助文档
+                </a>
+            </p>
+        </div>
+        <div class="col-sm-4">
+            <h4>核心功能：</h4>
+            <ol>
+                <li>智能代码补全：行级/函数级实时补全</li>
+                <li>代码生成：自然语言转代码</li>
+                <li>代码解释：快速理解代码逻辑</li>
+                <li>单元测试生成：自动生成测试用例</li>
+                <li>代码注释生成：智能添加注释</li>
+                <li>研发智能问答：编程知识问答</li>
+                <li>多语言支持：Java、Python、C++等</li>
+                <li>IDE深度集成：VSCode、IDEA等</li>
+            </ol>
+        </div>
+    </div>
+    
+    <div class="wrapper wrapper-content">
+        <div class="row">
+            <div class="col-sm-4">
+                <div class="ibox float-e-margins">
+                    <div class="ibox-title">
+                        <h5>产品特色</h5>
+                    </div>
+                    <div class="ibox-content">
+                        <p><i class="fa fa-check-circle text-navy"></i> <b>高准确率：</b>基于通义大模型，代码补全准确率业界领先</p>
+                        <p><i class="fa fa-check-circle text-navy"></i> <b>多语言支持：</b>支持Java、Python、C++、JavaScript、Go等主流编程语言</p>
+                        <p><i class="fa fa-check-circle text-navy"></i> <b>上下文感知：</b>深度理解项目上下文，生成符合项目风格的代码</p>
+                        <p><i class="fa fa-check-circle text-navy"></i> <b>安全可靠：</b>企业级数据安全保障，代码不出域</p>
+                        <p><i class="fa fa-check-circle text-navy"></i> <b>持续进化：</b>模型持续优化，能力不断提升</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-sm-4">
+                <div class="ibox float-e-margins">
+                    <div class="ibox-title">
+                        <h5>应用场景</h5>
+                    </div>
+                    <div class="ibox-content">
+                        <p><i class="fa fa-laptop text-info"></i> <b>日常开发：</b>提升编码效率，减少重复性工作</p>
+                        <p><i class="fa fa-code text-info"></i> <b>代码重构：</b>快速理解遗留代码，辅助重构优化</p>
+                        <p><i class="fa fa-bug text-info"></i> <b>问题排查：</b>智能分析代码问题，提供解决方案</p>
+                        <p><i class="fa fa-graduation-cap text-info"></i> <b>学习新技术：</b>通过示例代码快速上手新框架</p>
+                        <p><i class="fa fa-rocket text-info"></i> <b>项目交付：</b>加速项目开发进度，提高代码质量</p>
+                        <p><i class="fa fa-users text-info"></i> <b>团队协作：</b>统一代码风格，提升协作效率</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-sm-4">
+                <div class="ibox float-e-margins">
+                    <div class="ibox-title">
+                        <h5>快速开始</h5>
+                    </div>
+                    <div class="ibox-content">
+                        <p><i class="fa fa-download"></i> <b>1. 安装插件</b></p>
+                        <p class="text-muted">在IDE插件市场搜索"通义灵码"或"Lingma"，点击安装</p>
+                        
+                        <p><i class="fa fa-sign-in"></i> <b>2. 登录账号</b></p>
+                        <p class="text-muted">使用阿里云账号或淘宝账号登录</p>
+                        
+                        <p><i class="fa fa-edit"></i> <b>3. 开始编码</b></p>
+                        <p class="text-muted">在代码编辑器中开始编写代码，灵码会自动提供智能建议</p>
+                        
+                        <hr>
+                        
+                        <p><i class="fa fa-link"></i> <b>相关链接：</b></p>
+                        <p>
+                            <a href="https://tongyi.aliyun.com/lingma" target="_blank">官方网站</a> | 
+                            <a href="https://help.aliyun.com/zh/lingma" target="_blank">帮助文档</a> | 
+                            <a href="https://developer.aliyun.com/topic/lingma" target="_blank">开发者社区</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="ibox float-e-margins">
+                    <div class="ibox-title">
+                        <h5>常见问题</h5>
+                    </div>
+                    <div class="ibox-content">
+                        <div class="panel-group" id="faq">
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h5 class="panel-title">
+                                        <a data-toggle="collapse" data-parent="#faq" href="#faq1">
+                                            <i class="fa fa-question-circle"></i> 通义灵码支持哪些IDE？
+                                        </a>
+                                    </h5>
+                                </div>
+                                <div id="faq1" class="panel-collapse collapse in">
+                                    <div class="panel-body">
+                                        通义灵码目前支持Visual Studio Code、JetBrains系列IDE（IntelliJ IDEA、PyCharm、WebStorm、GoLand等）。后续会支持更多主流IDE。
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h5 class="panel-title">
+                                        <a data-toggle="collapse" data-parent="#faq" href="#faq2">
+                                            <i class="fa fa-question-circle"></i> 通义灵码是否收费？
+                                        </a>
+                                    </h5>
+                                </div>
+                                <div id="faq2" class="panel-collapse collapse">
+                                    <div class="panel-body">
+                                        通义灵码个人版免费使用，企业版提供更多高级功能和定制化服务，具体收费标准请咨询阿里云销售。
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h5 class="panel-title">
+                                        <a data-toggle="collapse" data-parent="#faq" href="#faq3">
+                                            <i class="fa fa-question-circle"></i> 代码安全如何保障？
+                                        </a>
+                                    </h5>
+                                </div>
+                                <div id="faq3" class="panel-collapse collapse">
+                                    <div class="panel-body">
+                                        通义灵码采用企业级安全标准，代码不出域，不会用于模型训练。企业版支持私有化部署，确保数据安全。
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h5 class="panel-title">
+                                        <a data-toggle="collapse" data-parent="#faq" href="#faq4">
+                                            <i class="fa fa-question-circle"></i> 如何获得技术支持？
+                                        </a>
+                                    </h5>
+                                </div>
+                                <div id="faq4" class="panel-collapse collapse">
+                                    <div class="panel-body">
+                                        您可以通过阿里云开发者社区、官方文档、在线客服等渠道获取技术支持。企业版用户享有专属技术支持服务。
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
