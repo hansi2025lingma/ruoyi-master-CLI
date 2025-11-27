@@ -23,6 +23,7 @@ import com.ruoyi.common.utils.CookieUtils;
 import com.ruoyi.common.utils.DateUtils;
 import com.ruoyi.common.utils.ServletUtils;
 import com.ruoyi.common.utils.StringUtils;
+import org.apache.shiro.authz.annotation.RequiresPermissions;
 import com.ruoyi.framework.shiro.service.SysPasswordService;
 import com.ruoyi.system.service.ISysConfigService;
 import com.ruoyi.system.service.ISysMenuService;
@@ -135,6 +136,17 @@ public class SysIndexController extends BaseController
     {
         mmap.put("version", RuoYiConfig.getVersion());
         return "main";
+    }
+
+    // 灵码介绍
+    @RequiresPermissions("system:lingma:view")
+    @GetMapping("/system/lingma")
+    public String lingmaIntro(ModelMap mmap)
+    {
+        mmap.put("version", "1.0.0");
+        mmap.put("officialUrl", "https://tongyi.aliyun.com/lingma");
+        mmap.put("docUrl", "https://help.aliyun.com/zh/lingma");
+        return "system/lingma-intro";
     }
 
     // content-main class
