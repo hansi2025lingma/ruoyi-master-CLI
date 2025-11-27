@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="zh" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--360浏览器优先以webkit内核解析-->
+    <title>灵码介绍</title>
+    <link rel="shortcut icon" href="favicon.ico">
+    <link href="../static/css/bootstrap.min.css" th:href="@{/css/bootstrap.min.css}" rel="stylesheet"/>
+    <link href="../static/css/font-awesome.min.css" th:href="@{/css/font-awesome.min.css}" rel="stylesheet"/>
+    <link href="../static/css/style.min.css" th:href="@{/css/style.min.css}" rel="stylesheet"/>
+</head>
+
+<body class="gray-bg">
+    <div class="row border-bottom white-bg dashboard-header">
+        <div class="col-sm-3">
+            <h2>Hello, Developer</h2>
+            <small>AI编程助手，让编码更智能</small>
+            <br>
+            <br>
+            <div style="text-align: center;">
+                <i class="fa fa-code" style="font-size: 120px; color: #1ab394;"></i>
+            </div>
+            <br>
+        </div>
+        <div class="col-sm-5">
+            <h2>阿里云通义灵码</h2>
+            <p>通义灵码是阿里云出品的基于通义大模型的AI编程助手。面向开发者提供智能编码辅助能力，旨在以AI技术重塑软件研发效率和体验。通义灵码可以智能生成代码、自动编写注释、解释代码含义、生成单元测试等，帮助开发者显著提升编码效率。</p>
+            <p>
+                <b>当前版本：</b><span>v[[${version}]]</span>
+            </p>
+            <p>
+                <span class="label label-success">AI驱动</span>
+                <span class="label label-primary">智能编码</span>
+                <span class="label label-warning">效率提升</span>
+            </p>
+            <br>
+            <p>
+                <a class="btn btn-success btn-outline" th:href="${officialUrl}" target="_blank">
+                    <i class="fa fa-cloud"> </i> 访问官网
+                </a>
+                <a class="btn btn-white btn-bitbucket" th:href="${docUrl}" target="_blank">
+                    <i class="fa fa-book"></i> 查看文档
+                </a>
+            </p>
+        </div>
+        <div class="col-sm-4">
+            <h4>核心能力：</h4>
+            <ol>
+                <li>智能代码补全：基于上下文的智能代码建议</li>
+                <li>代码生成：根据注释生成完整代码</li>
+                <li>单元测试生成：自动生成测试用例</li>
+                <li>代码注释生成：智能添加代码注释</li>
+                <li>代码解释：理解和解释代码逻辑</li>
+                <li>代码优化：提供性能和质量优化建议</li>
+                <li>多语言支持：Java、Python、JavaScript等</li>
+                <li>更多……</li>
+            </ol>
+        </div>
+    </div>
+    
+    <div class="wrapper wrapper-content">
+        <div class="row">
+            <div class="col-sm-4">
+                <div class="ibox float-e-margins">
+                    <div class="ibox-title">
+                        <h5>联系信息</h5>
+                    </div>
+                    <div class="ibox-content">
+                        <p><i class="fa fa-globe"></i> 官网：<a th:href="${officialUrl}" target="_blank">通义灵码官网</a></p>
+                        <p><i class="fa fa-book"></i> 文档：<a th:href="${docUrl}" target="_blank">产品文档中心</a></p>
+                        <p><i class="fa fa-comments"></i> 社区：<a href="https://developer.aliyun.com/" target="_blank">阿里云开发者社区</a></p>
+                        <p><i class="fa fa-question-circle"></i> 支持：<a href="https://help.aliyun.com/" target="_blank">帮助中心</a></p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-sm-4">
+                <div class="ibox float-e-margins">
+                    <div class="ibox-title">
+                        <h5>产品特性</h5>
+                    </div>
+                    <div class="ibox-content">
+                        <h4>AI能力</h4>
+                        <ul>
+                            <li><i class="fa fa-check text-success"></i> 智能代码补全</li>
+                            <li><i class="fa fa-check text-success"></i> 代码生成</li>
+                            <li><i class="fa fa-check text-success"></i> 单元测试生成</li>
+                            <li><i class="fa fa-check text-success"></i> 代码注释生成</li>
+                            <li><i class="fa fa-check text-success"></i> 代码解释与优化</li>
+                        </ul>
+                        <h4>适用场景</h4>
+                        <ul>
+                            <li><i class="fa fa-code text-info"></i> 日常开发编码</li>
+                            <li><i class="fa fa-wrench text-info"></i> 代码重构优化</li>
+                            <li><i class="fa fa-graduation-cap text-info"></i> 技术学习提升</li>
+                            <li><i class="fa fa-bug text-info"></i> 问题排查定位</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-sm-4">
+                <div class="ibox float-e-margins">
+                    <div class="ibox-title">
+                        <h5>使用指南</h5>
+                    </div>
+                    <div class="ibox-content">
+                        <h4>快速开始</h4>
+                        <ol>
+                            <li>访问官网下载安装IDE插件</li>
+                            <li>登录阿里云账号完成授权</li>
+                            <li>在IDE中启用灵码功能</li>
+                            <li>开始体验AI编程助手</li>
+                        </ol>
+                        <h4>常用功能</h4>
+                        <ul>
+                            <li><i class="fa fa-lightbulb-o text-warning"></i> 代码智能提示</li>
+                            <li><i class="fa fa-magic text-warning"></i> 一键生成代码</li>
+                            <li><i class="fa fa-comment-o text-warning"></i> 智能问答对话</li>
+                            <li><i class="fa fa-tasks text-warning"></i> 自动生成测试</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="ibox float-e-margins">
+                    <div class="ibox-title">
+                        <h5>核心优势</h5>
+                    </div>
+                    <div class="ibox-content">
+                        <div class="row">
+                            <div class="col-sm-3">
+                                <div class="text-center">
+                                    <i class="fa fa-rocket" style="font-size: 48px; color: #1ab394;"></i>
+                                    <h4>基于通义大模型</h4>
+                                    <p>依托阿里云强大的AI能力，提供卓越的代码理解和生成能力</p>
+                                </div>
+                            </div>
+                            <div class="col-sm-3">
+                                <div class="text-center">
+                                    <i class="fa fa-language" style="font-size: 48px; color: #1c84c6;"></i>
+                                    <h4>多语言支持</h4>
+                                    <p>支持Java、Python、JavaScript、Go等主流编程语言</p>
+                                </div>
+                            </div>
+                            <div class="col-sm-3">
+                                <div class="text-center">
+                                    <i class="fa fa-tachometer" style="font-size: 48px; color: #f8ac59;"></i>
+                                    <h4>效率显著提升</h4>
+                                    <p>智能编码辅助让开发效率提升数倍，减少重复劳动</p>
+                                </div>
+                            </div>
+                            <div class="col-sm-3">
+                                <div class="text-center">
+                                    <i class="fa fa-shield" style="font-size: 48px; color: #ed5565;"></i>
+                                    <h4>安全可靠</h4>
+                                    <p>企业级安全保障，代码隐私得到充分保护</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="ibox float-e-margins">
+                    <div class="ibox-title">
+                        <h5>适用人群</h5>
+                    </div>
+                    <div class="ibox-content">
+                        <div class="row">
+                            <div class="col-sm-4">
+                                <div class="well">
+                                    <h4><i class="fa fa-building text-navy"></i> 企业开发者</h4>
+                                    <p>提升团队开发效率，加快项目交付速度，保障代码质量</p>
+                                </div>
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="well">
+                                    <h4><i class="fa fa-user text-info"></i> 独立开发者</h4>
+                                    <p>降低开发门槛，快速实现想法，专注业务逻辑而非重复代码</p>
+                                </div>
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="well">
+                                    <h4><i class="fa fa-graduation-cap text-success"></i> 技术学习者</h4>
+                                    <p>理解代码逻辑，学习最佳实践，加速技术成长和能力提升</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
