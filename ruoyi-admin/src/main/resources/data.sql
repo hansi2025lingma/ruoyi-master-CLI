@@ -40,6 +40,10 @@ INSERT INTO sys_menu VALUES('100',  '用户管理', '1', '1', '/system/user',   
 INSERT INTO sys_menu VALUES('101',  '角色管理', '1', '2', '/system/role',          '', 'C', '0', '1', 'system:role:view',         'fa fa-user-secret',     'admin', NOW(), '', NULL, '角色管理菜单');
 INSERT INTO sys_menu VALUES('102',  '菜单管理', '1', '3', '/system/menu',          '', 'C', '0', '1', 'system:menu:view',         'fa fa-th-list',         'admin', NOW(), '', NULL, '菜单管理菜单');
 INSERT INTO sys_menu VALUES('103',  '部门管理', '1', '4', '/system/dept',          '', 'C', '0', '1', 'system:dept:view',         'fa fa-outdent',         'admin', NOW(), '', NULL, '部门管理菜单');
+INSERT INTO sys_menu VALUES('114',  '表单构建', '3', '1', '/tool/build',           '', 'C', '0', '1', 'tool:build:view',          'fa fa-wpforms',         'admin', NOW(), '', NULL, '表单构建菜单');
+INSERT INTO sys_menu VALUES('115',  '代码生成', '3', '2', '/tool/gen',             '', 'C', '0', '1', 'tool:gen:view',            'fa fa-code',            'admin', NOW(), '', NULL, '代码生成菜单');
+INSERT INTO sys_menu VALUES('116',  '系统接口', '3', '3', '/tool/swagger',         '', 'C', '0', '1', 'tool:swagger:view',        'fa fa-gg',              'admin', NOW(), '', NULL, '系统接口菜单');
+INSERT INTO sys_menu VALUES('117',  'Qoder介绍', '3', '4', '/tool/qoder',           '', 'C', '0', '1', 'tool:qoder:view',          'fa fa-rocket',          'admin', NOW(), '', NULL, 'Qoder产品介绍菜单');
 
 -- ----------------------------
 -- 初始化-角色和菜单关联表数据
@@ -51,6 +55,10 @@ INSERT INTO sys_role_menu VALUES ('1', '100');
 INSERT INTO sys_role_menu VALUES ('1', '101');
 INSERT INTO sys_role_menu VALUES ('1', '102');
 INSERT INTO sys_role_menu VALUES ('1', '103');
+INSERT INTO sys_role_menu VALUES ('1', '114');
+INSERT INTO sys_role_menu VALUES ('1', '115');
+INSERT INTO sys_role_menu VALUES ('1', '116');
+INSERT INTO sys_role_menu VALUES ('1', '117');
 
 -- ----------------------------
 -- 初始化-字典类型表数据
