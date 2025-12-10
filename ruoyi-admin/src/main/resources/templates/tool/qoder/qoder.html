@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="zh" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Qoder产品介绍</title>
+    <link rel="shortcut icon" href="favicon.ico">
+    <link href="../../../static/css/bootstrap.min.css" th:href="@{/css/bootstrap.min.css}" rel="stylesheet"/>
+    <link href="../../../static/css/font-awesome.min.css" th:href="@{/css/font-awesome.min.css}" rel="stylesheet"/>
+    <link href="../../../static/css/style.min.css" th:href="@{/css/style.min.css}" rel="stylesheet"/>
+    <style>
+        .feature-icon {
+            font-size: 48px;
+            color: #1ab394;
+            margin-bottom: 15px;
+        }
+        .feature-box {
+            text-align: center;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+        .feature-box h3 {
+            margin-bottom: 15px;
+            color: #333;
+        }
+        .gradient-header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 40px 20px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+        .gradient-header h1 {
+            color: white;
+            margin-bottom: 20px;
+        }
+        .code-block {
+            background: #2d2d2d;
+            color: #f8f8f2;
+            padding: 15px;
+            border-radius: 5px;
+            font-family: 'Consolas', 'Monaco', monospace;
+            overflow-x: auto;
+        }
+        .badge-pro {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 5px 10px;
+            border-radius: 15px;
+            font-size: 12px;
+        }
+    </style>
+</head>
+
+<body class="gray-bg">
+    <!-- 顶部介绍区域 -->
+    <div class="row border-bottom white-bg dashboard-header">
+        <div class="col-sm-3 text-center" style="padding: 30px;">
+            <div style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); width: 150px; height: 150px; border-radius: 20px; margin: 0 auto; display: flex; align-items: center; justify-content: center;">
+                <span style="font-size: 72px; color: white; font-weight: bold;">Q</span>
+            </div>
+            <h3 style="margin-top: 20px;">Qoder</h3>
+            <span class="badge-pro">AI智能编程助手</span>
+        </div>
+        <div class="col-sm-5">
+            <h2>Qoder - AI智能编程助手</h2>
+            <p>Qoder 是一款强大的 AI 智能编程助手，集成于您最熟悉的 IDE 中，帮助开发者提升编码效率。它能够理解代码上下文，提供智能代码补全、代码解释、Bug修复建议、代码重构等功能。无论您是<b>后端开发</b>、<b>前端开发</b>、<b>全栈工程师</b>还是<b>DevOps工程师</b>，Qoder 都能成为您的得力助手，让编程变得更加高效、愉快。</p>
+            <p>
+                <b>当前版本：</b><span>v1.0.0</span>
+            </p>
+            <p>
+                <span class="label label-primary">智能编程</span>
+                <span class="label label-success">提升效率</span>
+                <span class="label label-info">AI驱动</span>
+            </p>
+            <br>
+            <p>
+                <a class="btn btn-primary btn-outline" href="https://tongyi.aliyun.com/lingma" target="_blank">
+                    <i class="fa fa-cloud-download"> </i> 立即体验
+                </a>
+                <a class="btn btn-white" href="https://help.aliyun.com/zh/lingma/" target="_blank">
+                    <i class="fa fa-book"></i> 查看文档
+                </a>
+            </p>
+        </div>
+        <div class="col-sm-4">
+            <h4>核心能力：</h4>
+            <ol>
+                <li><b>智能代码补全</b>：基于上下文的精准补全</li>
+                <li><b>代码生成</b>：自然语言描述生成代码</li>
+                <li><b>代码解释</b>：一键理解复杂代码逻辑</li>
+                <li><b>Bug检测修复</b>：智能发现并修复问题</li>
+                <li><b>代码重构</b>：优化代码结构和性能</li>
+                <li><b>单元测试生成</b>：自动生成测试用例</li>
+                <li><b>多语言支持</b>：Java/Python/JS/Go等</li>
+                <li><b>更多……</b></li>
+            </ol>
+        </div>
+    </div>
+
+    <!-- 功能特性区域 -->
+    <div class="wrapper wrapper-content">
+        <div class="row">
+            <div class="col-sm-4">
+                <div class="ibox float-e-margins">
+                    <div class="ibox-title">
+                        <h5><i class="fa fa-magic"></i> 智能代码补全</h5>
+                    </div>
+                    <div class="ibox-content">
+                        <p>Qoder 能够深度理解您的代码上下文，提供精准的代码补全建议：</p>
+                        <ul>
+                            <li>支持行级和函数级代码补全</li>
+                            <li>自动推断变量类型和方法签名</li>
+                            <li>学习您的编码风格和习惯</li>
+                            <li>实时响应，毫秒级补全</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="ibox float-e-margins">
+                    <div class="ibox-title">
+                        <h5><i class="fa fa-code"></i> 自然语言生成代码</h5>
+                    </div>
+                    <div class="ibox-content">
+                        <p>用自然语言描述需求，Qoder 帮您生成高质量代码：</p>
+                        <ul>
+                            <li>支持中英文需求描述</li>
+                            <li>生成符合最佳实践的代码</li>
+                            <li>自动添加注释和文档</li>
+                            <li>支持复杂业务逻辑实现</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="ibox float-e-margins">
+                    <div class="ibox-title">
+                        <h5><i class="fa fa-bug"></i> 智能Bug检测与修复</h5>
+                    </div>
+                    <div class="ibox-content">
+                        <p>Qoder 能够智能识别代码中的问题并提供修复建议：</p>
+                        <ul>
+                            <li>实时检测潜在Bug和安全漏洞</li>
+                            <li>提供详细的问题分析</li>
+                            <li>一键应用修复建议</li>
+                            <li>支持批量问题修复</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-4">
+                <div class="ibox float-e-margins">
+                    <div class="ibox-title">
+                        <h5><i class="fa fa-comments"></i> 智能问答对话</h5>
+                    </div>
+                    <div class="ibox-content">
+                        <p>与 Qoder 进行自然对话，获取编程相关帮助：</p>
+                        <ul>
+                            <li>解答技术问题和概念</li>
+                            <li>提供最佳实践建议</li>
+                            <li>协助设计系统架构</li>
+                            <li>代码Review与优化建议</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="ibox float-e-margins">
+                    <div class="ibox-title">
+                        <h5><i class="fa fa-flask"></i> 单元测试生成</h5>
+                    </div>
+                    <div class="ibox-content">
+                        <p>自动生成高质量的单元测试用例：</p>
+                        <ul>
+                            <li>分析代码逻辑自动生成测试</li>
+                            <li>覆盖边界条件和异常场景</li>
+                            <li>支持多种测试框架</li>
+                            <li>提高代码测试覆盖率</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="ibox float-e-margins">
+                    <div class="ibox-title">
+                        <h5><i class="fa fa-refresh"></i> 代码重构优化</h5>
+                    </div>
+                    <div class="ibox-content">
+                        <p>智能识别可优化的代码并提供重构建议：</p>
+                        <ul>
+                            <li>识别代码坏味道</li>
+                            <li>提供重构方案和实现</li>
+                            <li>优化代码性能</li>
+                            <li>提升代码可读性</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 支持语言 -->
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="ibox float-e-margins">
+                    <div class="ibox-title">
+                        <h5><i class="fa fa-globe"></i> 支持的编程语言</h5>
+                    </div>
+                    <div class="ibox-content text-center">
+                        <span class="label label-primary" style="font-size: 14px; margin: 5px;">Java</span>
+                        <span class="label label-success" style="font-size: 14px; margin: 5px;">Python</span>
+                        <span class="label label-info" style="font-size: 14px; margin: 5px;">JavaScript</span>
+                        <span class="label label-warning" style="font-size: 14px; margin: 5px;">TypeScript</span>
+                        <span class="label label-danger" style="font-size: 14px; margin: 5px;">Go</span>
+                        <span class="label label-primary" style="font-size: 14px; margin: 5px;">C/C++</span>
+                        <span class="label label-success" style="font-size: 14px; margin: 5px;">Rust</span>
+                        <span class="label label-info" style="font-size: 14px; margin: 5px;">PHP</span>
+                        <span class="label label-warning" style="font-size: 14px; margin: 5px;">Ruby</span>
+                        <span class="label label-danger" style="font-size: 14px; margin: 5px;">Swift</span>
+                        <span class="label label-primary" style="font-size: 14px; margin: 5px;">Kotlin</span>
+                        <span class="label label-success" style="font-size: 14px; margin: 5px;">Scala</span>
+                        <span class="label label-info" style="font-size: 14px; margin: 5px;">SQL</span>
+                        <span class="label label-warning" style="font-size: 14px; margin: 5px;">Shell</span>
+                        <span class="label label-default" style="font-size: 14px; margin: 5px;">更多...</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 使用场景 -->
+        <div class="row">
+            <div class="col-sm-6">
+                <div class="ibox float-e-margins">
+                    <div class="ibox-title">
+                        <h5><i class="fa fa-laptop"></i> 支持的IDE</h5>
+                    </div>
+                    <div class="ibox-content">
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <ul class="list-unstyled">
+                                    <li><i class="fa fa-check text-success"></i> VS Code</li>
+                                    <li><i class="fa fa-check text-success"></i> IntelliJ IDEA</li>
+                                    <li><i class="fa fa-check text-success"></i> PyCharm</li>
+                                    <li><i class="fa fa-check text-success"></i> WebStorm</li>
+                                </ul>
+                            </div>
+                            <div class="col-sm-6">
+                                <ul class="list-unstyled">
+                                    <li><i class="fa fa-check text-success"></i> GoLand</li>
+                                    <li><i class="fa fa-check text-success"></i> Eclipse</li>
+                                    <li><i class="fa fa-check text-success"></i> Visual Studio</li>
+                                    <li><i class="fa fa-check text-success"></i> JetBrains系列</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="ibox float-e-margins">
+                    <div class="ibox-title">
+                        <h5><i class="fa fa-envelope"></i> 联系我们</h5>
+                    </div>
+                    <div class="ibox-content">
+                        <p><i class="fa fa-send-o"></i> 官网：<a href="https://tongyi.aliyun.com/lingma" target="_blank">https://tongyi.aliyun.com/lingma</a></p>
+                        <p><i class="fa fa-book"></i> 文档：<a href="https://help.aliyun.com/zh/lingma/" target="_blank">https://help.aliyun.com/zh/lingma/</a></p>
+                        <p><i class="fa fa-github"></i> 开源社区：<a href="https://github.com/anthropics" target="_blank">GitHub</a></p>
+                        <p><i class="fa fa-comments"></i> 技术支持：7x24小时在线服务</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
